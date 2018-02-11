@@ -16,6 +16,11 @@ namespace DotNetRESTClient
             foreach (var repo in repositories)
             {
                 Console.WriteLine(repo.Name);
+                Console.WriteLine(repo.GitHubHomeUrl);
+                Console.WriteLine(repo.Homepage);
+                Console.WriteLine(repo.Watchers);
+                Console.WriteLine(repo.LastPush);
+                Console.WriteLine();
             }
         }
 
@@ -39,9 +44,6 @@ namespace DotNetRESTClient
                 );
 
                 var repositories = serializer.ReadObject(await taskStream) as List<Repository>;
-
-                foreach (var repo in repositories)
-                    Console.WriteLine(repo.Name);
                 
                 return repositories;    
             }
