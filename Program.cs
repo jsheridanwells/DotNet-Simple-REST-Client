@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Json;
 
 namespace DotNetRESTClient
 {
@@ -12,6 +14,10 @@ namespace DotNetRESTClient
 
         private static async Task ProcessRepositories()
             {
+                var serializer = new DataContractJsonSerializer(
+                    typeof(List<Repo>)
+                );
+
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(
                     new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json")
@@ -20,12 +26,14 @@ namespace DotNetRESTClient
                     "User-Agent", ".NET Foundation Repository Reporter"
                 );
 
-                var taskString = client.GetStringAsync(
+                var taskStream = client.GetStreamAsync(
                     "https://api.github.com/orgs/dotnet/repos"
                 );
 
-                var message = await taskString;
-                Console.WriteLine(message);
+                var repositories = serializer.ReadObject(await taskStream) as List<Repo>;
+
+                foreach (var repo in repositories)
+                    Console.WriteLine(repo.name);
             }
     }
 }
