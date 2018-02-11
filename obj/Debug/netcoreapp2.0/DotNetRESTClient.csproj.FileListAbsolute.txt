@@ -1,0 +1,10 @@
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/bin/Debug/netcoreapp2.0/DotNetRESTClient.deps.json
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/bin/Debug/netcoreapp2.0/DotNetRESTClient.runtimeconfig.json
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/bin/Debug/netcoreapp2.0/DotNetRESTClient.runtimeconfig.dev.json
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/bin/Debug/netcoreapp2.0/DotNetRESTClient.dll
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/bin/Debug/netcoreapp2.0/DotNetRESTClient.pdb
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/obj/Debug/netcoreapp2.0/DotNetRESTClient.csproj.CoreCompileInputs.cache
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/obj/Debug/netcoreapp2.0/DotNetRESTClient.AssemblyInfoInputs.cache
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/obj/Debug/netcoreapp2.0/DotNetRESTClient.AssemblyInfo.cs
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/obj/Debug/netcoreapp2.0/DotNetRESTClient.dll
+/Users/jeremysheridanwells/workspace/tutorials/DotNetRESTClient/obj/Debug/netcoreapp2.0/DotNetRESTClient.pdb
