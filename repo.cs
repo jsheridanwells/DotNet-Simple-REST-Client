@@ -1,9 +1,12 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace DotNetRESTClient
 {
-    public class Repo 
+    [DataContract(Name="repo")]
+    public class Repository
     {
-      public string name;
+      [DataMember(Name="name")]
+      public string Name { get; set; }
     }
 }
